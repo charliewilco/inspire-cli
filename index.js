@@ -5,7 +5,7 @@ import boxen from 'boxen'
 import chalk from 'chalk'
 import quotes from './quotes'
 
-function quote (direction) {
+function quote (dir = 'center') {
   const formatQuote = s => {
     const q = `${s.quote}
 
@@ -14,7 +14,7 @@ function quote (direction) {
     return boxen(q, {
       padding: 1,
       borderStyle: 'classic',
-      float: direction.toString()
+      float: `${dir}`
     })
   }
 
@@ -27,7 +27,7 @@ function quote (direction) {
 function inpire (x, flags) {
   let direction
 
-  flags ? direction = flags.direction : direction = 'center'
+  flags ? direction = flags.direction : null
 
   quote(direction)
 }
