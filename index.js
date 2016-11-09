@@ -24,7 +24,7 @@ function quote (dir = 'center') {
   return process.stdout.write(`\n${quote}\n`)
 }
 
-function inpire (x, flags) {
+function inspire (x, flags) {
   let direction
 
   flags ? direction = flags.direction : null
@@ -46,4 +46,4 @@ const cli = meow(`
   }
 })
 
-inpire(cli.input[0], cli.flags)
+module.exports = inspire(cli.input[0], cli.flags)
