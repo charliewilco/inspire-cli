@@ -1,6 +1,6 @@
 {
   "name": "inspire-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "inspiration right in your terminal",
   "main": "index.js",
   "bin": {
