@@ -1,4 +1,4 @@
-,module.exports = [
+module.exports = [
   {
     quote: 'A good head and a good heart are always a formidable combination',
     source: 'Nelson Mandela'
