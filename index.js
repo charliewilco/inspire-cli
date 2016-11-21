@@ -34,11 +34,11 @@ function inspire (x, flags) {
 
 const cli = meow(`
   Usage
-    $ keep-going
+    $ inspire
   Options
-    $ keep-going --direction, -d [left, right, center] aligns quote in given direction
-    $ keep-going --version, -v Print out the version number
-    $ keep-going --help Prints out this helpful instruction
+    $ inspire --direction, -d [left, right, center] aligns quote in given direction
+    $ inspire --version, -v Print out the version number
+    $ inspire --help Prints out this helpful instruction
 `, {
   alias: {
     v: 'version',
